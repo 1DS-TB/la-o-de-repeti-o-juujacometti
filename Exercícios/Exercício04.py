@@ -14,5 +14,3 @@ else:
         fatorial = fatorial * numero
         numero = numero - 1
 print(fatorial)
-
-

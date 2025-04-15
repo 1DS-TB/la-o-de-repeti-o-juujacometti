@@ -3,5 +3,5 @@
 print("Números de 1 a 10:")
 
 # Looping
-for numeros in range(1, 11):
-    print(numeros)
+for numero in range(1, 11):
+    print(numero)
