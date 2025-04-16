@@ -9,4 +9,4 @@ if n > 0:
     for linhas in range(1, n + 1):
         print("*" * linhas)  # Multiplica a quantidade de strings
 else:
-    print("O número digitado é inválido. Tente novamente.")
+    print("INVALIDO")
