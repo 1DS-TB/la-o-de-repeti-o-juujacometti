@@ -1,23 +1,27 @@
 # Calcule a soma da série harmônica até N termos: S = 1 + 1/2 + 1/3 + ... + 1/N. Arredonde o resultado para 2 casas decimais.
 
 # Solicitação para o usuário
-numero = int(input("Digite um número:\n"))
+divisor = int(input("Digite um número:\n"))
 
-# Lista para guardar as séries
-lista = []
+serie_harmonica = []
 
-# Variáveis
-serie = 0
+n = 1
 soma = 0
 
-# Looping para ir de 1 até o número digitado pelo usuário
-for i in range(1, numero+1):
-    serie = f"1/{i}" # Formatação da série
-    soma += 1/i
-    lista.append(serie)
+# Condição que verifica número negativo
+if divisor < 0:
+    print("INVALIDO")
 
-# Junção das séries com a formatação em +
-serie_formatada = " + ".join(lista)
+else:
+    # Looping
+    while n <= divisor:
+        serie_harmonica.append(f"1/{n}")
+        serie = 1 / n
+        n += 1
+        soma += serie
 
-print(f'A série harmônica de {numero} é: {serie_formatada}')
-print(f'A soma total é: {soma:.2f}')
+    print(serie_harmonica)
+    print(f"A soma da série harmônica é igual a: {soma:.2f}")
+
+
+
